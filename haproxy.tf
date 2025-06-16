@@ -1,6 +1,6 @@
-resource "proxmox_vm_qemu" "master-node" {
+resource "proxmox_vm_qemu" "haproxy-node" {
   vmid        = var.haproxy_node_vmid
-  name        = "master-node"
+  name        = "haproxy-node"
   target_node = "proxmox"
   agent       = 1
   cores       = var.haproxy_node_cores

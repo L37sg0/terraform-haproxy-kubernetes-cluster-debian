@@ -1,6 +1,6 @@
-resource "proxmox_vm_qemu" "master-node" {
+resource "proxmox_vm_qemu" "worker2-node" {
   vmid        = var.worker2_node_vmid
-  name        = "master-node"
+  name        = "worker2-node"
   target_node = "proxmox"
   agent       = 1
   cores       = var.worker2_node_cores
