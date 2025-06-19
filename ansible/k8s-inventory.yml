@@ -25,8 +25,8 @@ all:
         kubernetes_version: 1.30.0
   
   vars:
-    ansible_user: user
-    ansible_password: Password123
-    ansible_become: true
-    ansible_become_password: Password123
+    ansible_user: dev
+#    ansible_password: P@55w0rd
+#    ansible_become: true
+#    ansible_become_password: P@55w0rd
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
